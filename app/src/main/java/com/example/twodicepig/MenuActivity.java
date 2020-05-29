@@ -29,8 +29,8 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         //Assigns the corresponding views of each component
-        pig1 = findViewById(R.id.pig1_name);
-        pig2 = findViewById(R.id.pig2_name);
+//        pig1 = findViewById(R.id.pig1_name);
+//        pig2 = findViewById(R.id.pig2_name);
         playButton = findViewById(R.id.play_button);
         howToButton = findViewById(R.id.info_button);
         aboutButton = findViewById(R.id.about_button);
@@ -41,11 +41,11 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String player1 = pig1.getText().toString();
-                String player2 = pig2.getText().toString();
+//                String player1 = pig1.getText().toString();
+//                String player2 = pig2.getText().toString();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("pig_1_name", player1);
-                intent.putExtra("pig_2_name", player2);
+//                intent.putExtra("pig_1_name", player1);
+//                intent.putExtra("pig_2_name", player2);
                 startActivity(intent);
             }
         });

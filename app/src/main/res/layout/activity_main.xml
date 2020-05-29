@@ -49,15 +49,11 @@
         android:id="@+id/left_dice"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="225dp"
-        android:layout_marginRight="225dp"
         android:adjustViewBounds="false"
         android:baselineAlignBottom="false"
         android:cropToPadding="false"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tob_bar"
         app:srcCompat="@drawable/player1" />
@@ -66,13 +62,9 @@
         android:id="@+id/right_dice"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_marginStart="225dp"
-        android:layout_marginLeft="225dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintStart_toEndOf="@+id/divider"
         app:layout_constraintTop_toBottomOf="@+id/tob_bar"
         app:srcCompat="@drawable/player2" />
 
@@ -89,13 +81,7 @@
     <Button
         android:id="@+id/roll_button"
         android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="225dp"
-        android:layout_marginRight="225dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="100dp"
         android:background="#3F51B5"
         android:includeFontPadding="false"
         android:text="ROLL"
@@ -104,28 +90,22 @@
         android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
-        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/left_dice" />
+        app:layout_constraintTop_toBottomOf="@+id/note_text" />
 
     <Button
         android:id="@+id/hold_button"
         android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_marginStart="225dp"
-        android:layout_marginLeft="225dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="100dp"
         android:background="#3F51B5"
         android:text="HOLD"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView"
-        app:layout_constraintTop_toBottomOf="@+id/right_dice" />
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/note_text" />
 
     <Button
         android:id="@+id/next_button"
@@ -139,7 +119,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/note_text" />
+        app:layout_constraintTop_toBottomOf="@+id/note_text" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/bottom_bar"
@@ -223,19 +203,17 @@
     <TextView
         android:id="@+id/note_text"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp"
         android:gravity="center|center_horizontal|center_vertical"
         android:textColor="#0A0000"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:fontFamily="monospace"
-        app:layout_constraintBottom_toTopOf="@+id/roll_button"
         app:layout_constraintEnd_toEndOf="@+id/recyclerView"
         app:layout_constraintStart_toStartOf="@+id/recyclerView"
         app:layout_constraintTop_toBottomOf="@+id/player_image" />

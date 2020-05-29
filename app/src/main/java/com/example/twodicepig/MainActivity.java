@@ -119,15 +119,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Gets the data from MenuActivity and assigns it to proper variables
-        Intent intent = getIntent();
-        if (!intent.getStringExtra("pig_1_name").isEmpty())
-        {
-            player1 = intent.getStringExtra("pig_1_name");
-        }
-        if (!intent.getStringExtra("pig_2_name").isEmpty())
-        {
-            player2 = intent.getStringExtra("pig_2_name");
-        }
+//        Intent intent = getIntent();
+//        if (!intent.getStringExtra("pig_1_name").isEmpty())
+//        {
+//            player1 = intent.getStringExtra("pig_1_name");
+//        }
+//        if (!intent.getStringExtra("pig_2_name").isEmpty())
+//        {
+//            player2 = intent.getStringExtra("pig_2_name");
+//        }
 
 
 
